@@ -1,12 +1,16 @@
 import Books from "../../Hooks/Books/Books";
+import Card from "../Card/Card";
 
 const BooksCard = () => {
 
     const {books} = Books();
 
     return (
-        <div>
-            <h2>Books Card Section: {books.length}</h2>
+        <div className="grid grid-cols-3 gap-5">
+            {
+                books.map((book)=> (
+                <Card key={book.bookId} book={book}/>))
+            }
         </div>
     );
 };
