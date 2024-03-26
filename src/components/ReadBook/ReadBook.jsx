@@ -1,11 +1,12 @@
 import { CiLocationOn } from "react-icons/ci";
 import { BsPeople } from "react-icons/bs";
 import { MdOutlineContactPage } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 
 const ReadBook = ({ readBook }) => {
 
-    const { image, bookName, author, category, review, tags, totalPages, publisher, yearOfPublishing, rating } = readBook || {};
+    const { bookId ,image, bookName, author, category, tags, totalPages, publisher, yearOfPublishing, rating } = readBook || {};
 
     return (
 
@@ -26,11 +27,12 @@ const ReadBook = ({ readBook }) => {
                     <MdOutlineContactPage />
                     <p>Page: {totalPages}</p>
                 </ul>
-                <div>
+                <div className="flex border-t-2 py-5">
+                    <p>Category: {category}</p>
+                    <p>Rating: {rating}</p>
+                    <Link to={`/book-details/${bookId}`}><button class="btn btn-sm bg-green-300 rounded-3xl">View Details</button></Link>
                     
                 </div>
-
-
             </div>
         </div>
     );
