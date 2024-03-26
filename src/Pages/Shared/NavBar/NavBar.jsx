@@ -14,7 +14,7 @@ const NavBar = () => {
                         <li><NavLink to="/pagesToRead">Pages to Read</NavLink></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">BookWorm</a>
+                <a className="btn btn-ghost text-4xl text-green-800">BookWorm</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
