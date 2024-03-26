@@ -1,11 +1,16 @@
 import { useParams } from "react-router-dom";
 import Books from "../../Hooks/Books/Books";
 import { useEffect, useState } from "react";
+import { saveToLocalStorage } from "../../utils/localStorage";
 
 const BookDetails = () => {
     const [singleBook, setSingleBook] = useState([]);
     const { bookId } = useParams();
     const { books } = Books();
+
+    const handleRead = () =>{
+        saveToLocalStorage(singleBook);
+    };
 
     useEffect(() => {
         if (books) {
@@ -43,7 +48,7 @@ const BookDetails = () => {
                                 </tr>
                                 <tr>
                                     <th>Publisher:</th>
-                                    <th>{totalPages}</th>
+                                    <th>{publisher}</th>
                                 </tr>
                                 <tr>
                                     <th>Year of Publishing:</th>
@@ -57,7 +62,7 @@ const BookDetails = () => {
                         </table>
                     </div>
 
-                    <button className="btn btn-primary">Read</button>
+                    <button onClick={handleRead} className="btn btn-primary">Read</button>
                     <button className="btn ml-8 btn-primary">Wishlist</button>
                 </div>
             </div>
