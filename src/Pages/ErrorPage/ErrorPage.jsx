@@ -2,7 +2,9 @@
 const ErrorPage = () => {
     return (
         <div>
-            <h1>Error....</h1>
+            <h1>OOPS!!!!</h1>
+            <h2>Page not found</h2>
+            
         </div>
     );
 };

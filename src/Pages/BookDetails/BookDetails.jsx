@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Books from "../../Hooks/Books/Books";
 import { useEffect, useState } from "react";
 import { saveToLocalStorage } from "../../utils/localStorage";
+import { saveToWishStorage } from "../../utils/localWishStorage";
 
 const BookDetails = () => {
     const [singleBook, setSingleBook] = useState([]);
@@ -10,6 +11,10 @@ const BookDetails = () => {
 
     const handleRead = () =>{
         saveToLocalStorage(singleBook);
+    };
+
+    const handleWishList = () =>{
+        saveToWishStorage(singleBook);
     };
 
     useEffect(() => {
@@ -63,7 +68,7 @@ const BookDetails = () => {
                     </div>
 
                     <button onClick={handleRead} className="btn btn-primary">Read</button>
-                    <button className="btn ml-8 btn-primary">Wishlist</button>
+                    <button onClick={handleWishList} className="btn ml-8 btn-primary">Wishlist</button>
                 </div>
             </div>
         </div>
