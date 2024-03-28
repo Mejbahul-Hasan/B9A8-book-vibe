@@ -5,6 +5,8 @@ import Home from "../Pages/Home/Home";
 import BookDetails from "../Pages/BookDetails/BookDetails";
 import ListedBooks from "../Pages/ListedBooks/ListedBooks";
 import PagesToRead from "../Pages/PagesToRead/PagesToRead";
+import About from "../Pages/About/About";
+import Contact from "../Pages/Contact/Contact";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
         {
           path: "/pagesToRead",
           element: <PagesToRead/>,
+        },
+        {
+          path: "/about",
+          element: <About/>,
+        },
+        {
+          path: "/contact",
+          element: <Contact/>,
         },
         {
           path: "/book-details/:bookId",
