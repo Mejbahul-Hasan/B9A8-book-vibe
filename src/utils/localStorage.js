@@ -7,10 +7,10 @@ export const saveToLocalStorage = (books) => {
     if (!existedData) {
         savedData.push(books);
         localStorage.setItem("read", JSON.stringify(savedData));
-        toast.success('Books added to Read List');
+        toast.success('You have added to Read List successfully');
     }
     else {
-        toast.warning('You have already read this book');
+        toast.warning('Books are already available in Read List');
     }
 };
 

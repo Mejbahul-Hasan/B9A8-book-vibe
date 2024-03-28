@@ -3,17 +3,20 @@ import Books from "../../Hooks/Books/Books";
 import { useEffect, useState } from "react";
 import { saveToLocalStorage } from "../../utils/localStorage";
 import { saveToWishStorage } from "../../utils/localWishStorage";
+import useLocalStorage from "../../Hooks/useLocalStorage";
+import { toast } from "react-toastify";
 
 const BookDetails = () => {
     const [singleBook, setSingleBook] = useState([]);
     const { bookId } = useParams();
     const { books } = Books();
+    const { localData } = useLocalStorage();
 
-    const handleRead = () =>{
+    const handleRead = () => {
         saveToLocalStorage(singleBook);
     };
 
-    const handleWishList = () =>{
+    const handleWishList = () => {
         saveToWishStorage(singleBook);
     };
 
