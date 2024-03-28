@@ -1,6 +1,6 @@
 **Welcome to BookWorm!**
 
-Visit our live site: [www.bookstorename.com](www.bookstorename.com)
+Visit our live site: [https://glittering-trifle-7ef0cb.netlify.app/pagesToRead]
 
 ### Features and Characteristics:
 - **Extensive Collection:** Explore our vast collection of books spanning various genres, including fiction, non-fiction, romance, thriller, sci-fi, and more.
@@ -9,4 +9,4 @@ Visit our live site: [www.bookstorename.com](www.bookstorename.com)
 - **Community Engagement:** Join our vibrant online community of book lovers to discuss favorite reads, share recommendations, and connect with fellow bibliophiles.
 - **Secure Checkout:** Shop with confidence knowing that your transactions are safe and secure, with multiple payment options available for your convenience.
 
-Experience the joy of reading with [Bookstore Name]. Happy reading! 📚
+Experience the joy of reading with BookWorm. Happy reading! 📚
