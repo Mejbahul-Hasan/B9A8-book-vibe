@@ -7,7 +7,7 @@ const Home = () => {
             <Banner/>
             <div>
                 <h2 className="text-center font-bold text-5xl my-10">Books</h2>
-                <BooksCard/>
+                <BooksCard />
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 
 const About = () => {
     return (
-        <div>
+        <div className="p-36">
             <p>
                 Welcome to BookWorm, your one-stop destination for all things literary!
             </p><br />
